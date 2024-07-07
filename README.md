@@ -1,4 +1,4 @@
-# Paper MC systemd sripts
+# Paper MC systemd scripts
 
 Download Paper server from:
 <https://papermc.io/software/paper>
