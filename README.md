@@ -1,3 +1,6 @@
+Download Paper server from:
+<https://papermc.io/software/paper>
+
 Create user account `minecraft` and place server in `/home/minecraft`
 
 Rename Paper server executable file to `server.jar`
@@ -14,4 +17,5 @@ Run commands:
 echo "/stop" > /run/minecraft.stdin
 ```
 
+Script is using the Aikar's flags from:
 <https://docs.papermc.io/misc/tools/start-script-gen>
