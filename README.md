@@ -3,7 +3,7 @@
 Download Paper server from:
 <https://papermc.io/software/paper>
 
-Create user account `minecraft` and place server in `/home/minecraft/paper`
+Create user account `minecraft` and place server in `/home/minecraft/paper`.  This will be the service account for running the server and should *not* have __sudo__ access.
 
 Rename Paper server executable file to `server.jar`
 
