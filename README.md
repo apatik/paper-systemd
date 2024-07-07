@@ -7,7 +7,7 @@ Download __Paper__ server from:
 
 Place the server in `/home/minecraft/paper` then rename the __Paper__ server executable file to `server.jar`.
 
-Place the file `minecraft.sh` in `/usr/local/bin` and make sure it has execute permissions.
+Place the file `minecraft.sh` in `/usr/local/bin` and make sure it has execute permissions by running `chmod u+wrx minecraft.sh`.
 
 Place files `minecraft.service` and `minecraft.socket` in `/etc/systemd/system` then run `systemctl enable minecraft`.
 
