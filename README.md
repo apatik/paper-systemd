@@ -23,6 +23,12 @@ Place the server in `/home/minecraft/paper` then rename the __Paper__ server exe
 
 Switch back to your primary account with __sudo__ access.
 
+Clone this repo:
+```
+git clone https://github.com/AtomicSponge/paper-systemd.git
+cd paper-systemd
+```
+
 Place the file `minecraft` in `/usr/local/bin` and make sure it has execute permissions by running:
 ```
 sudo chmod +x minecraft
