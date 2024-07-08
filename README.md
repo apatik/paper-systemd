@@ -1,6 +1,6 @@
 # Paper MC systemd scripts
 
-Steps for using the provided scripts and setting up the Paper MC server as a __systemd__ service.  This will allow you to control the server with `systemctl` and interact with it using the `minecraft` command.
+Steps for using the provided scripts and setting up the __Paper MC__ server as a __systemd__ service.  This will allow you to control the server with `systemctl` and interact with it using the `minecraft` command.
 
 -----
 
