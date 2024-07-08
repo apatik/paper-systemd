@@ -98,7 +98,7 @@ Service script is using the Aikar's flags from:
 <https://docs.papermc.io/misc/tools/start-script-gen>
 
 `journalctl` manual:
-<https://www.man7.org/linux/man-pages/man1/journalctl.1.html>
+<https://www.freedesktop.org/software/systemd/man/latest/journalctl.html#>
 
 Adapted from:
 <https://unix.stackexchange.com/a/612118>
