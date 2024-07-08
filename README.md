@@ -84,7 +84,7 @@ To view server output use the `journalctl` commmand.
 
 For example, this will list the entire log:
 ```
-journalctl -u minecraft.service
+journalctl -u minecraft
 ```
 
 -----
