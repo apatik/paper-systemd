@@ -44,7 +44,7 @@ Default memory usage is 4GB, to change edit `minecraft.service` and update the f
 
 Run commands:
 ```
-minecraft /stop
+minecraft /ver
 ```
 
 -----
