@@ -58,6 +58,15 @@ To run commands, enter the server command after `minecraft`:
 minecraft kick PlayerName
 ```
 
+<sub>*Note:* Do not use / before the command name</sub>
+
+To view server output use the `journalctl` commmand.
+
+For example, this will list the entire log:
+```
+journalctl -u minecraft.service
+```
+
 -----
 
 ### References
