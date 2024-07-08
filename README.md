@@ -55,10 +55,15 @@ Commands are passed to the server via the provided script.
 
 To run commands, enter the server command after `minecraft`:
 ```
-minecraft /ver
+minecraft kick PlayerName
 ```
 
 -----
 
-Script is using the Aikar's flags from:
+### References
+
+For a list of server commands see:
+<https://minecraft.fandom.com/wiki/Commands>
+
+Service script is using the Aikar's flags from:
 <https://docs.papermc.io/misc/tools/start-script-gen>
