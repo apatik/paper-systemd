@@ -99,3 +99,6 @@ Service script is using the Aikar's flags from:
 
 `journalctl` manual:
 <https://www.man7.org/linux/man-pages/man1/journalctl.1.html>
+
+Adapted from:
+<https://unix.stackexchange.com/a/612118>
