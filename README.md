@@ -19,6 +19,14 @@ Log into the minecraft service account.  Download __Paper__ server from:
 
 Place the server in `/home/minecraft/paper` then rename the __Paper__ server executable file to `server.jar`.
 
+Using the commands below, replacing for the correct download URL and filename:
+```
+mkdir paper
+cd paper
+wget https://api.papermc.io/v2/projects/paper/GETLATESTFROMWEBSITE
+mv paper-x.xx.x-xxx.jar server.jar
+```
+
 ## Configure scripts
 
 Switch back to your primary account with __sudo__ access.
@@ -80,3 +88,6 @@ For a list of server commands see:
 
 Service script is using the Aikar's flags from:
 <https://docs.papermc.io/misc/tools/start-script-gen>
+
+`journalctl` manual:
+<https://www.man7.org/linux/man-pages/man1/journalctl.1.html>
