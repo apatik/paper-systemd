@@ -25,12 +25,12 @@ Switch back to your primary account with __sudo__ access.
 
 Place the file `minecraft` in `/usr/local/bin` and make sure it has execute permissions by running:
 ```
-chmod +x minecraft
+sudo chmod +x minecraft
 ```
 
 Place files `minecraft.service` and `minecraft.socket` in `/etc/systemd/system` then run:
 ```
-systemctl enable minecraft
+sudo systemctl enable minecraft
 ```
 
 ## Memory Usage
