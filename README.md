@@ -33,16 +33,18 @@ Place files `minecraft.service` and `minecraft.socket` in `/etc/systemd/system` 
 sudo systemctl enable minecraft
 ```
 
-## Memory Usage
+## Memory Setting
 
-Default memory usage is 4GB, to change edit `minecraft.service` and update the following under `ExecStart` to your desired values:
+Default memory setting is 4GB, to change edit `minecraft.service` and update the following under `ExecStart` to your desired values:
 ```
 -Xms4096M -Xmx4096M
 ```
 
 ## Usage
 
-Run commands:
+Commands are passed to the server via the provided script.
+
+To run commands, enter the server command after `minecraft`:
 ```
 minecraft /ver
 ```
