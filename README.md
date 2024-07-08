@@ -35,10 +35,14 @@ sudo chmod +x minecraft
 sudo mv minecraft /usr/local/bin
 ```
 
-Place files `minecraft.service` and `minecraft.socket` in `/etc/systemd/system` then run:
+Place files `minecraft.service` and `minecraft.socket` in `/etc/systemd/system`:
 ```
 sudo mv minecraft.service /etc/systemd/system
 sudo mv minecraft.socket /etc/systemd/system
+```
+
+Then to start the service run:
+```
 sudo systemctl enable minecraft
 ```
 
