@@ -27,6 +27,8 @@ wget https://api.papermc.io/v2/projects/paper/GETLATESTFROMWEBSITE
 mv paper-x.xx.x-xxx.jar server.jar
 ```
 
+*Note:* If this is the first time you're running __Paper__ on your server, you'll want to manually run it at this point to agree to it's EULA.
+
 ## Configure scripts
 
 Switch back to your primary account with __sudo__ access.
