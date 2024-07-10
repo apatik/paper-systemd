@@ -47,7 +47,7 @@ cd paper-systemd
 
 Place the file `minecraft` in `/usr/local/bin` and make sure it has execute permissions by running:
 ```
-sudo chmod +x minecraft
+chmod 555 minecraft
 sudo mv minecraft /usr/local/bin
 ```
 
