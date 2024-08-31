@@ -80,7 +80,7 @@ minecraft kick PlayerName
 
 <sub>*Note:* Do not use / before the command name</sub>
 
-To view server output use the `journalctl` commmand.
+To view server output use the `journalctl` command.
 
 For example, this will monitor the log:
 ```
