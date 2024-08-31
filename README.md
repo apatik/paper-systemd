@@ -82,9 +82,9 @@ minecraft kick PlayerName
 
 To view server output use the `journalctl` commmand.
 
-For example, this will list the entire log:
+For example, this will monitor the log:
 ```
-journalctl -u minecraft
+journalctl -u minecraft -f
 ```
 
 -----
