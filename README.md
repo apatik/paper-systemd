@@ -73,7 +73,8 @@ Default memory setting is 4GB, to change edit `minecraft_java.env` and update `J
 
 Commands are passed to the server via the provided script `minecraft-console.py`.
 
-To run commands, open console by running `minecraft-console`. After executing the command, you will see the server log from `journalctl` and a prompt to enter the command.
+To run commands, open console by running `minecraft-console`. 
+After executing the command, you will see the server log from `journalctl` and a prompt to enter the command.
 To exit the console, press CTRL+C
 
 <sub>*Note:* Do not use / before the command name</sub>
