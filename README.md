@@ -45,10 +45,10 @@ git clone https://github.com/AtomicSponge/paper-systemd.git
 cd paper-systemd
 ```
 
-Place the file `minecraft` in `/usr/local/bin` and make sure it has execute permissions by running:
+Create link of file `minecraft-console.py` in `/usr/local/bin` and make sure it has execute permissions by running:
 ```
-chmod 555 minecraft
-sudo mv minecraft /usr/local/bin
+chmod 555 minecraft-console.py
+sudo ln minecraft-console.py /usr/local/bin
 ```
 
 Place files `minecraft.service` and `minecraft.socket` in `/etc/systemd/system`:
@@ -64,19 +64,17 @@ sudo systemctl enable minecraft
 
 ## Memory Setting
 
-Default memory setting is 4GB, to change edit `minecraft.service` and update the following under `ExecStart` to your desired values:
+Default memory setting is 4GB, to change edit `minecraft_java.env` and update `JAVA_OPTS` to your desired values::
 ```
 -Xms4096M -Xmx4096M
 ```
 
 ## Usage
 
-Commands are passed to the server via the provided script.
+Commands are passed to the server via the provided script `minecraft-console.py`.
 
-To run commands, enter the server command after `minecraft`:
-```
-minecraft kick PlayerName
-```
+To run commands, open console by running `minecraft-console`. After executing the command, you will see the server log from `journalctl` and a prompt to enter the command.
+To exit the console, press CTRL+C
 
 <sub>*Note:* Do not use / before the command name</sub>
 
