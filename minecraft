@@ -1,2 +1,4 @@
 #!/bin/sh
-printf '%s\n' "$*" > /run/minecraft.stdin
+INSTANCE=$1
+shift
+printf '%s\n' "$*" > minecraft-${INSTANCE}.stdin

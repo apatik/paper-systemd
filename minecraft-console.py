@@ -2,9 +2,14 @@
 import curses
 import subprocess
 import threading
+import sys
+import shlex
+
+instance = " ".join(map(shlex.quote, sys.argv[1:]))
+systemd_instance=f'minecraft@{instance}'
 
 def run_journalctl(win):
-    process = subprocess.Popen(['journalctl', '-u', 'minecraft', '--follow'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.Popen(['journalctl', '-u', systemd_instance, '--follow'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     while True:
         line = process.stdout.readline()
         if not line:
@@ -13,17 +18,22 @@ def run_journalctl(win):
         win.refresh()
 
 def input_commands(win):
-    with open('/run/minecraft.stdin', 'a') as f:
+    with open(f'/run/minecraft-{instance}.stdin', 'a') as f:
         while True:
             win.clear()
             win.addstr("Enter  command (Ctrl-C to exit): ")
             curses.echo()
             win.move(1, 0)
-            command = win.getstr().decode()
-            f.write(command + "\n")
-            f.flush()
-            curses.noecho()
-            win.clear()
+            commandRaw = win.getstr()
+            if (len(commandRaw) != 0 and commandRaw[0] == 3):
+                # Input was only a Ctrl+C
+                break
+            else: 
+                command=commandRaw.decode()
+                f.write(command + "\n")
+                f.flush()
+                curses.noecho()
+                win.clear()
 
 def main(stdscr):
     try:

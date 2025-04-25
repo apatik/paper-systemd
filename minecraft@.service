@@ -1,0 +1,18 @@
+[Unit]
+Description=%i Minecraft Server
+
+[Service]
+Type=simple
+WorkingDirectory=/srv/minecraft/%i
+EnvironmentFile=/srv/minecraft/%i/minecraft_java.env
+ExecStart=/usr/bin/java $JAVA_OPTS -jar $SERVER_JAR nogui
+ExecStop=echo "${STOP_CMD}" > /run/minecraft-%i.stdin
+User=minecraft
+Restart=on-failure
+Sockets=minecraft@.socket
+StandardInput=socket
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

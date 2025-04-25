@@ -1,0 +1,8 @@
+[Unit]
+PartOf=minecraft@.service
+
+[Socket]
+ListenFIFO=%t/minecraft-%i.stdin
+SocketUser=minecraft
+SocketGroup=root
+SocketMode=0660
